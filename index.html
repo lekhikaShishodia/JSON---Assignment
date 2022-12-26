@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON Example</title>
+</head>
+<body>
+
+    <script>
+        const school=`{
+            "schoolName":"SBOA",
+            "year":1998,
+            "rank": 1,
+            "totalStudents":1000
+        }`;
+        const school1= JSON.parse(school);
+       document.write("<h1>JSON example</h1>");
+       document.write("<br>");
+       document.write("<h3>School Name = "+school1.schoolName+"</h3>");
+       document.write("<h3>Year = "+school1.year+"</h3>");
+       document.write("<h3>Rank in the city = "+school1.rank+"</h3>");
+       document.write("<h3>No. of students studying="+school1.totalStudents+"</h3>");
+       </script>
+
+    </script>
+</body>
+</html>
